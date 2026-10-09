@@ -1,0 +1,185 @@
+/* ========================================================= */
+/* [CSS / Configurar Proyecto & Normalización Base][cite: 3] */
+/* ========================================================= */
+* {
+    box-sizing: border-box; /* Modelo de caja universal */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Propiedades de texto */
+}
+
+body {
+    background-color: #f4f7f6; /* Propiedades de color */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========================================================= */
+/* [Propiedad Display / Creando Barras de Navegación][cite: 4] */
+/* ========================================================= */
+.main-header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    display: flex; /* Flexbox básico */
+    justify-content: space-between; /* Justificar el contenido */
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky; /* Posicionamiento pegajoso */
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    display: flex; /* Flexbox para lista horizontal */
+    list-style: none;
+    gap: 15px;
+}
+
+/* [Selectores / Avanzados y Pseudoclases][cite: 3] */
+.nav-bar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transiciones */
+}
+
+.nav-bar ul li a:hover {
+    color: #1abc9c;
+}
+
+/* ========================================================= */
+/* [Modelos de Caja / Diseñando con modelo de cajas][cite: 3] */
+/* ========================================================= */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.section-box {
+    background: #ffffff;
+    padding: 20px; /* Padding interno */
+    margin-bottom: 20px; /* Margen externo */
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ========================================================= */
+/* [Modelos de Caja / Inline y Block][cite: 4] */
+/* ========================================================= */
+.block-demo {
+    display: block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inline-demo {
+    display: inline;
+    background-color: #3498db;
+    color: white;
+    padding: 5px;
+}
+
+/* ========================================================= */
+/* [Modelos de Caja / Tablas y Botones][cite: 3] */
+/* ========================================================= */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #34495e;
+    color: white;
+}
+
+/* [Estilo en botones (Práctica)][cite: 3] */
+.btn-primary, .btn-secondary, .btn-like {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Propiedad Transición */
+}
+
+.btn-primary {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #219150;
+}
+
+.btn-secondary {
+    background-color: #2980b9;
+    color: white;
+}
+
+.btn-like {
+    background-color: #e67e22;
+    color: white;
+}
+
+/* ========================================================= */
+/* [Posiciones / Tarjeta de usuario (Core)][cite: 4] */
+/* ========================================================= */
+.profile-card {
+    position: relative; /* Posicionamiento relativo */
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* CCS Extras / Overflow */
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.card-header {
+    background-color: #3498db;
+    height: 80px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: -40px; /* Desplazamiento relativo */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* ========================================================= */
+/* [JavaScript en el buscador / Eventos y Modificaciones][cite: 7] */
+/* ========================================================= */
+.hover-card {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border: 2px dashed #bdc3c7;
+    margin-top: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.alert-text {
+    color: #e74c3c;
+    font-weight: bold;
+}
